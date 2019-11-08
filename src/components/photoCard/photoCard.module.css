@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+}
+
+.container:hover .zoomInBtn {
+  display: block;
+}
+
+.image {
+  object-fit: cover;
+  position: relative;
+  height: 250px;
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.zoomInBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.445);
+  border: none;
+  border-radius: 50%;
+  display: none;
+}
+
+:global(.material-icons-style) {
+  padding: 7px;
+  font-size: 36px;
+}
